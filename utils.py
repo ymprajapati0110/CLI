@@ -5,7 +5,7 @@ from datetime import datetime
 def print_header(title: str):
     border="="+len(title)
     print(f"\n{border}")
-    print(title.upper)
+    print(title.upper())
     print(f"{border}")
 
 #Print message
@@ -21,18 +21,18 @@ def print_warning(message: str):
     print(f"Warning: {message}")
 
 #Validate non empty string 
-def validate_non_empty_string(promt: str)->str:
+def validate_non_empty_string(prompt: str)->str:
     while True:
-        value=input(promt).strip()
+        value=input(prompt).strip()
         if not value:
             print_error("Input can't be empty, please enter a valid value")
             continue
         return value
 
 #Validate amount
-def validate_amount(promt: str, allow_zero: bool = False)-> float:
+def validate_amount(prompt: str, allow_zero: bool = False)-> float:
     while True:
-        raw_input=input(promt).strip()
+        raw_input=input(prompt).strip()
         if not raw_input:
             print_error("Amount cant be empty")
             continue
