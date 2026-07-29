@@ -3,7 +3,7 @@ from datetime import datetime
 
 #Print title
 def print_header(title: str):
-    border="="+len(title)
+    border="=" * len(title)
     print(f"\n{border}")
     print(title.upper())
     print(f"{border}")
