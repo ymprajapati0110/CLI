@@ -11,7 +11,7 @@ class User:
 
     @name.setter
     def name(self, value:str):
-        if not value.strip:
+        if not value.strip():
             raise ValueError("Name cannot be empty")
         self._name=value.strip()
 
