@@ -24,7 +24,7 @@ def save_data(user:User|None, incomes:list[Income], expenses:list[Expense])->boo
         print(f"Error saving data to file: {e}")
         return False
     
-def load_data()->tuple[User|None, list[Income, list[Expense]]]:
+def load_data()->tuple[User|None, list[Income], list[Expense]]:
     if not Json_path.exists():
         logger.info("JSON data not found. Starting with empty data")
         return None,[],[]
