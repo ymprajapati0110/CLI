@@ -1,6 +1,14 @@
 import os
 import sys
 import logging
+
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
+
 from constants import logs_path
 import utils
 import reports
