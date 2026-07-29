@@ -11,6 +11,8 @@ Log_dir.mkdir(parents=True, exist_ok=True)
 
 Json_path=Data_dir/"expenses.json"
 Csv_path=Data_dir/"expenses.csv"
+CSV_PATH=Csv_path
+
 
 logs_path=Log_dir/"app.log"
 
